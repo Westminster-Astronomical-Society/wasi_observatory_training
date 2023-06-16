@@ -1,0 +1,65 @@
+%!TEX program = lualatex
+
+% Name           : WASI_observatory_training.tex
+% Author         : Christopher Bennett (chris@east20thst.net)
+% Version        : 0.1
+% Created on     : 2023-05-16
+% Last Edited on : 2023-05-16
+% Copyright      : 2023, Christopher Bennett
+% License        : This file is in the Public Domain; It may be distributed
+%                  and/or modified for any purpose.
+% Description    : WASI Observatory training presentation (light).
+
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% ------ Packages and definitions -----------------------------------------
+\usepackage{booktabs} % Better tables
+\usepackage{caption} % For sub-figures
+\usepackage{subcaption} % For sub-figures
+\usepackage[scale=2]{ccicons} % Icons for CC-BY-SA
+\usepackage{appendixnumberbeamer} % To use \appendix command
+\pdfstringdefDisableCommands{% Fix hyperref translate warning with \appendix
+  \def\translate#1{#1}%
+}
+
+% ------ Set theme and options --------------------------------------------
+\usetheme[background=light,sectionstyle=style4]{trigon2}
+
+% ------ Template graphics ------------------------------------------------
+\graphicspath{{images/}}
+
+\titlegraphic{\includegraphics{template/cassiopeia-bg.png}}
+\biglogo{template/wasi_full.pdf} % Used on titlepage only
+\smalllogo{template/wasi_small.pdf} % Top right corner of regular frames
+
+% ------ Define custom colors ---------------------------------------------
+\definecolor{tTheme}{HTML}{800000}  % Red
+\definecolor{tPrim}{HTML}{800000}   % Red
+\definecolor{tSec}{HTML}{FF0000}    % Light Red
+\definecolor{tAccent}{HTML}{808080} % Gray
+
+% ------ Document metadata ------------------------------------------------
+\title{Basic Observatory Operations}
+% \subtitle{Blaine F. Roelke Memorial Observatory}
+\author[JB]{Jeff Burns, Observatory Director}
+\institute{Westminster Astronomical Society}
+\date{\today}
+
+% -------------------------------------------------------------------------
+%                               BEGIN DOCUMENT
+% -------------------------------------------------------------------------
+
+\begin{document}
+
+% ------ Create title frame -----------------------------------------------
+\titleframe
+
+% ------ Table of contents ------------------------------------------------
+\begin{frame}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\include{frames}
+
+\end{document}
