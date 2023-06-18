@@ -1013,7 +1013,7 @@
 
 % -----------------------------------------------
 
-\begin{frame}[t]{Observatory Log}
+\begin{frame}[t]{\insertsubsectionhead\ (observatory log)}
 \begin{columns}[T]
   \column{0.45\textwidth}
     \begin{figure}[h]
@@ -1049,13 +1049,13 @@
       CC BY-SA 4.0}}
     \column{0.55\textwidth}
   
-    \large
+    \Large
       \begin{itemize}
-        \item Hook the eyelet with cordless drill/hook. 
-        \item Run the drill counterclockwise on medium speed until open.
-        \item If observing near zenith, pull the release chain while starting to open.
+        \item Hook the eyelet with the drill and run counterclockwise at
+         medium speed until open.
+        \item If observing near zenith, pull the release chain while opening.
         \item if observing near the horizon leave the lower section attached.
-        \item Rotate the dome as required using rope tied to handles
+        \item Rotate the dome using the rope.
       \end{itemize}
   \end{columns}
   \end{frame}
@@ -1084,6 +1084,7 @@
 % -----------------------------------------------
 
 \begin{frame}[t]{\insertsubsectionhead}
+  \large
     The mount should be balanced, aligned and left in park position 3. All you
     need to do is connect power, the system will initialize and the Main Menu
     will appear on the keypad. You can go directly to the Objects Menu and
@@ -1097,7 +1098,7 @@
     \column{0.45\textwidth}
       \begin{itemize}
           \item[] \textbf{1=Objects} (objects menu)
-          \item[] \textbf{4=Time/LST} (verify date and time)
+          \item[] \textbf{4=Time/LST} (verify date/time)
           \item[] \textbf{5=S:900}   (slew rate)
           \item[] \textbf{6=b:200}   (button rate)
           \item[] \textbf{7=T:Side}  (tracking rate)
@@ -1106,7 +1107,7 @@
 \end{frame}
 
 % -----------------------------------------------
-\begin{frame}[t]{\insertsubsectionhead}
+\begin{frame}[t]{\insertsubsectionhead\ (check date \& time)}
     \begin{columns}[T]
     \column{0.55\textwidth}
       \begin{figure}[h]
@@ -1114,6 +1115,7 @@
         \caption{Time/LST}
       \end{figure}
     \column{0.45\textwidth}
+    \large
     \ \\[0.25ex]
     Press \textbf{4=Time/LST} to verify the time.\\[1ex]
 
@@ -1124,6 +1126,33 @@
   \end{columns}
 \end{frame}
 
+% -----------------------------------------------
+\begin{frame}[t]{\insertsubsectionhead\ (set date \& time)}
+  \begin{columns}[T]
+  \column{0.55\textwidth}
+  \begin{figure}[ht]
+    \begin{subfigure}{0.67\textwidth}
+        \frame{\includegraphics[width=\textwidth]{keypad/AP_menu-setup.pdf}}
+    \caption{setup menu}
+  \end{subfigure}
+  \vspace{\fill}
+  \begin{subfigure}{0.67\textwidth}
+      \frame{\includegraphics[width=\textwidth]{keypad/AP_menu-setup-1.pdf}}
+    \caption{location}
+  \end{subfigure}
+\end{figure}
+  \column{0.45\textwidth}
+  \large
+  \ \\[0.25ex]
+  If the Date and time are not correct from the main menu press \textbf{2=Setup}
+  then \textbf{1=Location \& Time}.\\[1ex]
+
+  Select \textbf{2=Date\&Time} and edit the date and time.\\[1ex]
+  
+  For daylight savings  select \textbf{5=QwkDST} and it will automatically update
+  to the opposite  of the current setting.
+\end{columns}
+\end{frame}
 % -----------------------------------------------
 \begin{frame}[t]{\insertsubsectionhead}
     \begin{columns}[T]
@@ -1140,14 +1169,15 @@
     \end{subfigure}
   \end{figure}
     \column{0.45\textwidth}
+    \large
     \ \\[0.25ex]
-    If the mount was not properly shut down during the previous observing
-    session you may see the External Startup or Location Selections screen.\\[1ex]
+    If the mount was not properly shut down during the previous session you may
+    see the External Startup or Location Selections screen.\\[1ex]
 
     Press \textbf{Menu} to cancel External Startup\\[1ex]
 
     On the Location screen press \textbf{ENT} to use loc 1.
-    (there should only be one location)
+    (there is only one location)
 
   \end{columns}
 \end{frame}
@@ -1169,13 +1199,13 @@
         \end{subfigure}
       \end{figure}
     \column{0.45\textwidth}
+    \large
     \ \\[0.25ex]
-    Verify that the time and date are correct.\\[1ex]
+    Verify the date and time.\\[1ex]
 
-    Press \textbf{ENT} to accept or \textbf{+/-} to edit the date and
-    time.\\[1ex]
+    Press \textbf{ENT} to accept or \textbf{+/-} to edit it.\\[1ex]
 
-    Press \textbf{1} to resume from last position.\\[1ex]
+    Press \textbf{1=Resume From Last Position}.\\[1ex]
 
     From the main menu select \textbf{1=Setup} then \textbf{4=Kpd, Mnt, Park},
     and \textbf{7=Auto-connect:YES} to return it to the default setup.
@@ -1184,15 +1214,16 @@
 \end{frame}
 
 
-\subsection{Shutdown Procedures}
+\subsection{Closing the Observatory}
 % ==============================================
 
-\begin{frame}[t]{\insertsubsectionhead}
+\begin{frame}[t]{\insertsubsectionhead\ (mount shutdown procedures)}
   \begin{columns}[T]
     \column{0.45\textwidth}
       \centering
       \includegraphics[height=0.8\textheight]{p3.png}
     \column{0.55\textwidth}
+    \large
     Go to the quick-access menu [\textbf{+/-}] select \textbf{4=Kpd, Mnt,
     Park} and park position 3.\\[1ex]
 
@@ -1201,8 +1232,8 @@
   \end{columns}
 \end{frame}
 
-\subsection{Closing the Observatory}
-% ==============================================
+% -----------------------------------------------
+
 \begin{frame}{\insertsubsectionhead}
   \Large
   \begin{itemize}
@@ -1400,6 +1431,7 @@
       \caption{objects menu}
     \end{figure}
   \column{0.45\textwidth}
+  \large
   % \ \\[0.25ex]
    \textbf{1=Objects} to go to the objects menu.\\[1ex]
 
@@ -1430,6 +1462,7 @@
       \end{subfigure}
     \end{figure}
   \column{0.45\textwidth}
+  \large
   \ \\[0.25ex]
   From the objects menu select \textbf{1=M}, \textbf{2=NGC} or \textbf{3=IC}
   for Messier, NGC, or IC objects.\\[1ex]
@@ -1459,6 +1492,7 @@
       \end{subfigure}
     \end{figure}
   \column{0.45\textwidth}
+  \large
   \ \\[0.25ex]
   From the objects menu select \textbf{4=Sol} Solar System objects.\\[1ex]
 
@@ -1485,8 +1519,9 @@
       \end{subfigure}
     \end{figure}
   \column{0.45\textwidth}
+  \large
   \ \\[0.25ex]
-  From the objects menu select \textbf{5=Strs} (200 named stars).\\[1ex]
+  From the objects menu select \textbf{5=Strs}.\\[1ex]
 
   Enter \textbf{0--9} for the corresponding star or \textbf{\textless
   PREV/NEXT \textgreater} to scroll through the list. \\[1ex]
@@ -1503,6 +1538,7 @@
 % -----------------------------------------------
 
 \begin{frame}[t]{Other Stuff}
+\large
 \begin{columns}[T]
   \column{0.5\textwidth}
   \textbf{6=More}
@@ -1554,6 +1590,7 @@
         \end{subfigure}
       \end{figure}
     \column{0.45\textwidth}
+    \large
     \ \\[0.25ex]
     When the mount limits are set the mount will stop tracking at the
     meridian. \\[1ex]
@@ -1584,6 +1621,7 @@
         \end{subfigure}
       \end{figure}
     \column{0.45\textwidth}
+    \large
     \textbf{Mount Limits} \\[0.25ex]
 
     Limits may be toggled on or off by pressing \textbf{2=Setup} and
@@ -1611,10 +1649,10 @@
         \end{subfigure}
       \end{figure}
     \column{0.45\textwidth}
+    \large
     \textbf{Meridian Delay} \\[0.25ex]
 
-    You can use the meridian delay feature to track past the meridian or to
-    initiate a meridian flip early. \\[1ex]
+    Use the meridian delay to track past the meridian or initiate an early flip. \\[1ex]
 
     To delay or advance the meridian, from the quick-access menu
     [\textbf{+/-}] select \textbf{9=RA/Dec Controls} and \textbf{\textless
